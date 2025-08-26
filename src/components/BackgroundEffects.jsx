@@ -3,10 +3,7 @@ import React from "react";
 const BackgroundEffects = ({ symbols }) => {
   return (
     <div className="absolute inset-0 overflow-hidden -z-10">
-      {/* Star Grid */}
       <div className="absolute w-full h-full bg-[radial-gradient(circle,rgba(255,255,255,0.04)_1px,transparent_1px)] bg-[length:22px_22px]" />
-
-      {/* Floating Symbols */}
       {symbols && symbols.map((item, index) => (
         <span
           key={index}
@@ -16,17 +13,15 @@ const BackgroundEffects = ({ symbols }) => {
           {item.symbol}
         </span>
       ))}
-
-      {/* Animations */}
       <style jsx>{`
         .animate-float1 {
-          animation: float1 12s ease-in-out infinite;
+          @apply animate-[float1_12s_ease-in-out_infinite];
         }
         .animate-float2 {
-          animation: float2 14s ease-in-out infinite;
+          @apply animate-[float2_14s_ease-in-out_infinite];
         }
         .animate-float3 {
-          animation: float3 16s ease-in-out infinite;
+          @apply animate-[float3_16s_ease-in-out_infinite];
         }
         @keyframes float1 {
           0%, 100% { transform: translateY(0) translateX(0); }
