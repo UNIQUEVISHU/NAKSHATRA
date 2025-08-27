@@ -130,7 +130,7 @@ export default function App() {
               </motion.p>
 
               <p className="text-base sm:text-lg md:text-xl text-gray-300 mb-6 sm:mb-8 px-2 sm:px-4">
-                Dive into the cosmos with the Astronomy Society of NSUT
+                Dive into the cosmos with the Astronomy Society of NSUT—where curiosity meets the infinite. From guided stargazing nights and deep-sky imaging to talks, workshops, and data-driven space research, we turn wonder into wisdom. Join us to explore planets, decode cosmic phenomena, and build projects that blend science, math, and creativity.
               </p>
 
               <motion.button
