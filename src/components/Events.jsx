@@ -33,7 +33,7 @@ export default function Events({ onSelectEvent }) {
       description: (
         <>
           Annual Inter-College Space Science & Technology Conclave of NSUT, Delhi Organized by{" "}
-          <span className="text-blue-400 font-extrabold">Nakshatra</span>
+          <span className="text-white font-extrabold">Nakshatra</span>
         </>
       ),
       image: event4Img,
