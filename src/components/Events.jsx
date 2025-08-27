@@ -10,7 +10,7 @@ export default function Events({ onSelectEvent }) {
   const Activities = [
     {
       id: 1,
-      title: "Astronomy Night",
+      title: "Astronomy Calender",
       date: "2025-09-10",
       description: "Stargazing and telescope observation night.",
       image: event1Img,
@@ -19,7 +19,7 @@ export default function Events({ onSelectEvent }) {
       id: 2,
       title: "Linear Regression",
       date: "2025-10-15",
-      description: "A thrilling competition for math enthusiasts.",
+      description: "This isn't just another math lesson - it's how traders turn historical data into future profits.",
       image: event2Img,
     },
   ];
@@ -37,7 +37,8 @@ export default function Events({ onSelectEvent }) {
       id: 3,
       title: "Stargazing",
       date: "2025-11-05",
-      description: "Test your space knowledge in a fun quiz!",
+      description: "Our telescope will be set up for you to explore celestial beauties—planets, stars, and beyond! 🌠 Whether you're an astronomy enthusiast or just curious, this is your chance to see the universe like never before"
+,
       image: event3Img,
     },
   ];
