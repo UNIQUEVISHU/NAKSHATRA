@@ -19,7 +19,8 @@ export default function Events({ onSelectEvent }) {
       id: 2,
       title: "Linear Regression",
       date: "2025-10-15",
-      description: "This isn't just another math lesson - it's how traders turn historical data into future profits.",
+      description:
+        "This isn't just another math lesson - it's how traders turn historical data into future profits.",
       image: event2Img,
     },
   ];
@@ -29,16 +30,20 @@ export default function Events({ onSelectEvent }) {
       id: 4,
       title: "Spacecon",
       date: "2024-04-08",
-      description:
-        "Annual Inter-College Space Science & Technology Conclave of NSUT, Delhi  Organized by @nakshatra_nsut.",
+      description: (
+        <>
+          Annual Inter-College Space Science & Technology Conclave of NSUT, Delhi Organized by{" "}
+          <span className="text-blue-400 font-extrabold">Nakshatra</span>
+        </>
+      ),
       image: event4Img,
     },
     {
       id: 3,
       title: "Stargazing",
       date: "2025-11-05",
-      description: "Our telescope will be set up for you to explore celestial beauties—planets, stars, and beyond! 🌠 Whether you're an astronomy enthusiast or just curious, this is your chance to see the universe like never before"
-,
+      description:
+        "Our telescope will be set up for you to explore celestial beauties planets, stars, and beyond! Whether you're an astronomy enthusiast or just curious, this is your chance to see the universe like never before",
       image: event3Img,
     },
   ];
@@ -70,9 +75,7 @@ export default function Events({ onSelectEvent }) {
                 />
               </div>
               <div className="p-5">
-                <h4 className="text-xl font-bold mb-1 text-blue-300">
-                  {event.title}
-                </h4>
+                <h4 className="text-xl font-bold mb-1 text-blue-300">{event.title}</h4>
                 <p className="text-gray-400 text-sm mb-2">{event.date}</p>
                 <p className="text-gray-200 text-sm">{event.description}</p>
               </div>
@@ -102,9 +105,7 @@ export default function Events({ onSelectEvent }) {
                 />
               </div>
               <div className="p-5">
-                <h4 className="text-xl font-bold mb-1 text-cyan-300">
-                  {event.title}
-                </h4>
+                <h4 className="text-xl font-bold mb-1 text-cyan-300">{event.title}</h4>
                 <p className="text-gray-400 text-sm mb-2">{event.date}</p>
                 <p className="text-gray-200 text-sm">{event.description}</p>
               </div>
