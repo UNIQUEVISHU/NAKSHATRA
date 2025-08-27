@@ -30,13 +30,28 @@ export default function Contact() {
             <p className="flex items-center gap-3"><Mail /> nakshatra@nsut.com</p>
           </div>
           <div className="flex gap-6 mt-6">
-            <a href="https://www.facebook.com/Nakshatra.DU/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition">
+            <a
+              href="https://www.facebook.com/Nakshatra.DU/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-blue-400 transition cursor-pointer"
+            >
               <Facebook size={28} />
             </a>
-            <a href="https://www.instagram.com/nakshatra_nsut?igshid=5qzqv4howx7u" target="_blank" rel="noopener noreferrer" className="hover:text-pink-400 transition">
+            <a
+              href="https://www.instagram.com/nakshatra_nsut?igshid=5qzqv4howx7u"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-pink-400 transition cursor-pointer"
+            >
               <Instagram size={28} />
             </a>
-            <a href="https://www.linkedin.com/company/nakshatra-nsut/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 transition">
+            <a
+              href="https://www.linkedin.com/company/nakshatra-nsut/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-blue-500 transition cursor-pointer"
+            >
               <Linkedin size={28} />
             </a>
           </div>
@@ -45,7 +60,7 @@ export default function Contact() {
               href="https://chat.whatsapp.com/BwPYiIWfbyk0RJJhLdd6X3?mode=r_c&fbclid=PAZXh0bgNhZW0CMTEAAaeAPytnIsPZ0FpbLnwY6WGW_271WPurZImW7xwpjQGa-XLYEb29M03WggrD4A_aem_y0zZA5Pg8oUQUWg0OgmDcg"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-green-500 px-5 py-3 rounded-full text-white font-semibold hover:bg-green-600 transition"
+              className="bg-green-500 px-5 py-3 rounded-full text-white font-semibold hover:bg-green-600 transition cursor-pointer"
             >
               Join WhatsApp
             </a>
@@ -53,7 +68,7 @@ export default function Contact() {
               href="https://discord.com/invite/saXSByC9"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-indigo-500 px-5 py-3 rounded-full text-white font-semibold hover:bg-indigo-600 transition"
+              className="bg-indigo-500 px-5 py-3 rounded-full text-white font-semibold hover:bg-indigo-600 transition cursor-pointer"
             >
               Join Discord
             </a>
@@ -71,7 +86,7 @@ export default function Contact() {
               value={formData.name}
               onChange={handleChange}
               required
-              className="w-full p-4 rounded-lg bg-gray-700 text-white border border-gray-600 focus:outline-none focus:border-blue-400"
+              className="w-full p-4 rounded-lg bg-gray-700 text-white border border-gray-600 focus:outline-none focus:border-blue-400 cursor-pointer"
             />
             <input
               type="email"
@@ -80,7 +95,7 @@ export default function Contact() {
               value={formData.email}
               onChange={handleChange}
               required
-              className="w-full p-4 rounded-lg bg-gray-700 text-white border border-gray-600 focus:outline-none focus:border-blue-400"
+              className="w-full p-4 rounded-lg bg-gray-700 text-white border border-gray-600 focus:outline-none focus:border-blue-400 cursor-pointer"
             />
             <textarea
               name="message"
@@ -89,11 +104,11 @@ export default function Contact() {
               onChange={handleChange}
               required
               rows="4"
-              className="w-full p-4 rounded-lg bg-gray-700 text-white border border-gray-600 focus:outline-none focus:border-blue-400"
+              className="w-full p-4 rounded-lg bg-gray-700 text-white border border-gray-600 focus:outline-none focus:border-blue-400 cursor-pointer"
             ></textarea>
             <button
               type="submit"
-              className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold transition"
+              className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold transition cursor-pointer"
             >
               Send Message
             </button>

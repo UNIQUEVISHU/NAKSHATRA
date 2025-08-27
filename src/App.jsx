@@ -26,9 +26,13 @@ export default function App() {
         flexDirection: "column",
       }}
     >
+      {/* Dark overlay */}
       <div className="absolute inset-0 bg-black/70 md:bg-black/60"></div>
 
+      {/* HEADER */}
       <header className="fixed top-4 left-1/2 transform -translate-x-1/2 w-[95%] flex justify-between items-center px-4 md:px-6 py-3 bg-gray-800/50 backdrop-blur-md rounded-full shadow-lg z-50 border border-gray-700/50">
+        
+        {/* LOGO */}
         <div
           className="flex items-center gap-2 md:gap-3 cursor-pointer"
           onClick={() => setActivePage("home")}
@@ -36,19 +40,20 @@ export default function App() {
           <img
             src={logo}
             alt="Nakshatra Logo"
-            className="w-12 h-12 md:w-16 md:h-16 object-contain drop-shadow-lg"
+            className="w-12 h-12 md:w-16 md:h-16 object-contain drop-shadow-lg cursor-pointer"
           />
-          <h1 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-cyan-400 font-[Orbitron] drop-shadow-lg">
+          <h1 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-cyan-400 font-[Orbitron] drop-shadow-lg cursor-pointer">
             NAKSHATRA
           </h1>
         </div>
 
+        {/* DESKTOP NAV */}
         <nav className="hidden md:flex gap-4 lg:gap-6 text-sm md:text-lg font-semibold text-white">
           {["home", "about", "events", "gallery", "contact"].map((page) => (
             <button
               key={page}
               onClick={() => setActivePage(page)}
-              className={`hover:text-cyan-400 transition ${
+              className={`hover:text-cyan-400 transition cursor-pointer ${
                 activePage === page ? "text-cyan-400" : ""
               }`}
             >
@@ -57,14 +62,16 @@ export default function App() {
           ))}
         </nav>
 
+        {/* MOBILE MENU ICON */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="p-2 rounded-full bg-gray-700 hover:bg-gray-600 md:hidden"
+          className="p-2 rounded-full bg-gray-700 hover:bg-gray-600 md:hidden cursor-pointer"
         >
           {menuOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </header>
 
+      {/* MOBILE MENU */}
       <AnimatePresence>
         {menuOpen && (
           <motion.nav
@@ -82,7 +89,7 @@ export default function App() {
                   setActivePage(page);
                   setMenuOpen(false);
                 }}
-                className="text-white text-lg font-semibold hover:text-cyan-400"
+                className="text-white text-lg font-semibold hover:text-cyan-400 cursor-pointer"
               >
                 {page.toUpperCase()}
               </button>
@@ -91,6 +98,7 @@ export default function App() {
         )}
       </AnimatePresence>
 
+      {/* MAIN CONTENT */}
       <main className="relative z-10 text-white text-center pt-32 md:pt-40 pb-20 px-4 flex-grow">
         <AnimatePresence mode="wait">
           {activePage === "home" && (
@@ -105,7 +113,7 @@ export default function App() {
               <img
                 src={logo}
                 alt="Nakshatra Logo"
-                className="w-32 sm:w-40 md:w-48 lg:w-56 h-auto mb-4 sm:mb-6 mx-auto object-contain drop-shadow-xl"
+                className="w-32 sm:w-40 md:w-48 lg:w-56 h-auto mb-4 sm:mb-6 mx-auto object-contain drop-shadow-xl cursor-pointer"
               />
 
               <h2 className="text-3xl sm:text-5xl md:text-6xl font-extrabold mb-3 sm:mb-4 leading-snug">
@@ -128,7 +136,7 @@ export default function App() {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-6 sm:px-10 py-3 sm:py-4 bg-transparent border-2 border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-black text-lg sm:text-xl font-semibold rounded-full shadow-lg transition"
+                className="px-6 sm:px-10 py-3 sm:py-4 bg-transparent border-2 border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-black text-lg sm:text-xl font-semibold rounded-full shadow-lg transition cursor-pointer"
                 onClick={() => setActivePage("events")}
               >
                 Explore Events
@@ -186,6 +194,7 @@ export default function App() {
         </AnimatePresence>
       </main>
 
+      {/* FOOTER */}
       <footer className="relative z-10 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-center py-4 mt-auto rounded-t-3xl shadow-2xl">
         <p className="text-gray-400 text-xs sm:text-sm">
           © {new Date().getFullYear()} Nakshatra - All Rights Reserved

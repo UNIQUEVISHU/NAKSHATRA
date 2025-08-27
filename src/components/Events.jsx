@@ -35,7 +35,7 @@ export default function Events({ onSelectEvent }) {
     },
     {
       id: 3,
-      title: "Space Quiz",
+      title: "Stargazing",
       date: "2025-11-05",
       description: "Test your space knowledge in a fun quiz!",
       image: event3Img,
@@ -58,7 +58,7 @@ export default function Events({ onSelectEvent }) {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: i * 0.2 }}
-              className="bg-gray-800/70 rounded-2xl shadow-2xl hover:shadow-blue-500/40 transform hover:scale-105 transition duration-500 cursor-pointer overflow-hidden"
+              className="bg-gray-800/70 rounded-2xl shadow-2xl hover:shadow-blue-500/40 transform hover:scale-105 transition-transform duration-500 cursor-pointer overflow-hidden"
               onClick={() => onSelectEvent(event)}
             >
               <div className="w-full h-80 md:h-96 relative">
@@ -90,7 +90,7 @@ export default function Events({ onSelectEvent }) {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: i * 0.2 }}
-              className="bg-gray-800/70 rounded-2xl shadow-2xl hover:shadow-cyan-500/40 transform hover:scale-105 transition duration-500 cursor-pointer overflow-hidden"
+              className="bg-gray-800/70 rounded-2xl shadow-2xl hover:shadow-cyan-500/40 transform hover:scale-105 transition-transform duration-500 cursor-pointer overflow-hidden"
               onClick={() => onSelectEvent(event)}
             >
               <div className="w-full h-80 md:h-96 relative">

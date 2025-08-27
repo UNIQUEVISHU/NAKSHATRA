@@ -37,12 +37,12 @@ const Gallery = () => {
   ];
 
   return (
-    <section className="bg-gradient-to-br from-gray-900 via-black to-blue-900 text-white py-16 px-6">
-      <h2 className="text-5xl font-extrabold text-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-500">
+    <section className="bg-gradient-to-br cursor-pointer from-gray-900 via-black to-blue-900 text-white py-16 px-6">
+      <h2 className="text-5xl font-extrabold  cursor-pointertext-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-500">
         Space Gallery
       </h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3 gap-8">
         {mediaItems.map((item, index) => (
           <div
             key={index}
